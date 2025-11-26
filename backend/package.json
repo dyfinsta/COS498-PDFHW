@@ -2,14 +2,16 @@
   "name": "pdf-serving",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
+    "express-handlebars": "^7.1.2",
     "hbs": "^4.2.0"
   }
 }

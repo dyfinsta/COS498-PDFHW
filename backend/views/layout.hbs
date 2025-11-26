@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Library</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #2d3748;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #4a5568;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1.25rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a:hover {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .content-card {
+      background: white;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      color: #2d3748;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 2px;
+    }
+
+    h3 {
+      color: #4a5568;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: #718096;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    a:not(nav a) {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    }
+
+    a:not(nav a):hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+      margin: 2rem 0;
+    }
+
+    div[style*="margin-bottom"] {
+      background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem !important;
+      border-radius: 12px;
+      border-left: 4px solid #667eea;
+      transition: all 0.3s ease;
+    }
+
+    div[style*="margin-bottom"]:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+      }
+
+      nav a {
+        text-align: center;
+      }
+
+      .content-card {
+        padding: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📚 PDF Library</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/pdfs">PDFs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-card">
+            {{{ body }}}
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 PDF Library - Your Knowledge Repository</p>
+    </footer>
+</body>
+</html>

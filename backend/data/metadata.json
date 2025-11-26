@@ -1,0 +1,14 @@
+{
+  "the-color-wheel-and-beyond.pdf": {
+    "title": "The Color Wheel and Beyond",
+    "description": "This document provides a short introduction to color theory."
+  },
+  "color-matching-tools.pdf": {
+    "title": "Color Matching: Exploring Proper Tools, Methods & Procedures",
+    "description": "This document is a short overview of ways to use color matching."
+  },
+  "color-palette-cheatsheet.pdf": {
+    "title": "R Color Cheatsheet",
+    "description": "This document goes over hexadecimal color codes."
+  }
+}

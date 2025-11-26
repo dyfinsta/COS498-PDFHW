@@ -1,0 +1,10 @@
+<h2>Available PDF Documents</h2>
+
+{{#each pdfs}}
+<div>
+    <h3>{{title}}</h3>
+    <p>{{description}}</p>
+    <a href="/pdfs/{{filename}}" target="_blank">View PDF</a>
+</div>
+<hr>
+{{/each}}
