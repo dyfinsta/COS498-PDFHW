@@ -145,3 +145,8 @@
 [26/Nov/2025:01:40:49 +0000] 403 - GET http 167.71.253.48 "/index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5(\x22hi\x22));?>+/tmp/index1.php" [Client 93.26.87.131] [Length 150] [Gzip -] "libredtail-http" "-"
 [26/Nov/2025:01:40:49 +0000] 403 - GET http 167.71.253.48 "/index.php?lang=../../../../../../../../tmp/index1" [Client 93.26.87.131] [Length 150] [Gzip -] "libredtail-http" "-"
 [26/Nov/2025:01:40:50 +0000] 404 - GET http 167.71.253.48 "/containers/json" [Client 93.26.87.131] [Length 150] [Gzip -] "libredtail-http" "-"
+[26/Nov/2025:01:45:45 +0000] 400 - - http localhost-nginx-proxy-manager "-" [Client 172.104.11.46] [Length 154] [Gzip -] "-" "-"
+[26/Nov/2025:01:45:46 +0000] 400 - - http localhost-nginx-proxy-manager "-" [Client 172.104.11.46] [Length 154] [Gzip -] "-" "-"
+[26/Nov/2025:01:47:29 +0000] 200 - GET http 167.71.253.48 "/" [Client 204.76.203.212] [Length 568] [Gzip 1.86] "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46" "-"
+[26/Nov/2025:01:54:18 +0000] 200 - GET http www.bankofarmenia.net "/" [Client 182.42.105.144] [Length 568] [Gzip 1.86] "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1" "-"
+[26/Nov/2025:02:03:32 +0000] 200 - GET http www.bankofarmenia.net "/" [Client 101.33.66.34] [Length 568] [Gzip 1.86] "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1" "-"
